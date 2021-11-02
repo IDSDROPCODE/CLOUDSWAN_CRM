@@ -1,0 +1,32 @@
+<html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Paper Stack</title>
+<link rel="stylesheet" type="text/css" href="sample.css" />
+</head>
+<body>
+<div class="login_form">
+  <setion class="login-wrapper">
+    
+    <div class="logo">
+     <a target="_blank" rel="noopener" href="https://unrealnavigation.com">
+     <img src="https://unrealnavigation.com/_themes/unrealnavigation/img/unreal-navigation-logo.png?v=1474018625" alt=""></a>
+    </div>
+    
+    <form id="login" method="post" action="#">
+     
+      <label for="username">User Name</label>
+      <input  required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
+      
+      <label for="password">Password</label>
+      <input class="password" required name="login[password]" type="password" />
+      <div class="hide-show">
+        <span>Show</span>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+    
+  </section>
+</div>
+</body>
+</html>
