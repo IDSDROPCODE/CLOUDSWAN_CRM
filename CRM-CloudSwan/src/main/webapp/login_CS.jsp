@@ -36,13 +36,13 @@
  		</div>
                 </div>
                 <div class="card-body">
-                  <form name="logForm" id="logForm"  method="post" onsubmit="return validate_log()">
+                  <form name="logForm" id="logForm"  method="post" action="dashboard_CS.jsp">
                     <div class="row">
                     <div class="col-md-3"></div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Enter your Email ID</label><br>
-                          <input type="email" class="form-control" id="txtEmail" maxlength="150" name="txtEmail" autocomplete="off"  onchange="formcolorchange(this); EmailCheck(this);" >                       
+                         <input type="email" class="form-control" id="txtEmail" maxlength="150" name="txtEmail" autocomplete="off"  onchange="formcolorchange(this);EmailCheck(this);" >                      
                         </div>
                       </div>
                     </div>
@@ -52,20 +52,21 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Enter your password</label><br>
-                          <input type="password" class="form-control" id="txtPassword" name="txtPassword" maxlength="6" autocomplete="off"  onchange="formcolorchange(this);chkpassword(this); "> 
                           
+                          <input type="password" class="form-control" id="txtPass" name="txtPass" minlength="6" autocomplete="off"  onchange="formcolorchange(this);chkpassword(this); "> 
                         </div>
                       </div>
                     </div>
                     
                     <br>
-                      </form>
+                      
                        <div class="row">
                     <div class="col-md-4"></div>
                       <div class="col-md-5">
-						<a href="dashboard_CS.jsp"><button type="button" name="btnlogin" id="btnlogin" onclick="validate_log()" class="btn btn-block btn-info"><i class="material-icons">login</i>&nbsp;Get Started</button></a>
+						<a href="#"><button type="button" name="btnlogin" id="btnlogin" onclick="loginvalidation()" class="btn btn-block btn-info"><i class="material-icons">login</i>&nbsp;Get Started</button></a>
                       </div>
                     </div>
+                    </form>
                      
                       </div>
                     </div>

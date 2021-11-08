@@ -22,162 +22,9 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="img/sidebar-1.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-      <img src="img/CS_img.png" width="15%" height="15%">
-         Cloud Swan CRM
-        </a></div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="./dashboard.html">
-              <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./Employeeinfo_CS.jsp">
-              <i class="material-icons">person</i>
-              <p>Employee Info</p>
-            </a>
-          </li>
-           <li class="nav-item ">
-            <a class="nav-link" href="./student_CS.jsp">
-              <i class="material-icons">person</i>
-              <p>Student Details</p>
-            </a>
-          </li>
-           <li class="nav-item ">
-            <a class="nav-link" href="./trainees_CS.jsp">
-              <i class="material-icons">person</i>
-              <p>Trainees</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./traninee_exp_CS.jsp">
-              <i class="material-icons">person</i>
-              <p>Trainee Experience Details</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./course_CS.jsp">
-              <i class="material-icons">content_paste</i>
-              <p>Course Enrollment</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./enquiry_CS.jsp">
-              <i class="material-icons">library_books</i>
-              <p>Enquiry information</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./project_CS.jsp">
-              <i class="material-icons">bubble_chart</i>
-              <p>Project Details</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./software_CS.jsp">
-              <i class="material-icons">location_ons</i>
-              <p>Software Product/Service Info</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./followup_CS.jsp">
-              <i class="material-icons">notifications</i>
-              <p>Project Follow Up</p>
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="./invoice_CS.jsp">
-              <i class="material-icons">unarchive</i>
-              <p>Student Monthly Invoice</p>
-            </a>
-          </li>
-          
-           <li class="nav-item ">
-            <a class="nav-link" href="./mails_CS.jsp">
-              <i class="material-icons">language</i>
-              <p>Mails</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <jsp:include page="sidebar.jsp" />
     <div class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">Dashboard</a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <form class="navbar-form">
-              <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                  <i class="material-icons">search</i>
-                  <div class="ripple-container"></div>
-                </button>
-              </div>
-            </form>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:;">
-                  <i class="material-icons">dashboard</i>
-                  <p class="d-lg-none d-md-block">
-                    Stats
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">notifications</i>
-                  <span class="notification">5</span>
-                  <p class="d-lg-none d-md-block">
-                    Some Actions
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                  <a class="dropdown-item" href="#">Another Notification</a>
-                  <a class="dropdown-item" href="#">Another One</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">person</i>
-                  <p class="d-lg-none d-md-block">
-                    Account
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Settings</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
+      <jsp:include page="header.jsp" />
       <div class="content">
         <div class="container-fluid">
           <div class="row">
@@ -188,13 +35,12 @@
                     <i class="material-icons">person</i>
                   </div>
                   <p class="card-category"></p>
-                  <h3 class="card-title">80
-                  </h3>
+                  <h2 class="card-title text-center">80
+                  </h2>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                  <i class="material-icons">school</i>
-                    <p>No of Trainees</p>
+                  <i class="material-icons">school</i>No of Trainees
                   </div>
                 </div>
               </div>
@@ -206,7 +52,7 @@
                     <i class="material-icons">groups</i>
                   </div>
                   <p class="card-category"></p>
-                  <h3 class="card-title">15</h3>
+                  <h2 class="card-title text-center">15</h2>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -222,7 +68,7 @@
                     <i class="material-icons">engineering</i>
                   </div>
                   <p class="card-category"></p>
-                  <h3 class="card-title">50</h3>
+                  <h2 class="card-title text-center">50</h2>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -238,7 +84,7 @@
                    <i class="material-icons">construction</i>
                   </div>
                   <p class="card-category"></p>
-                  <h3 class="card-title">+5</h3>
+                  <h2 class="card-title text-center">+5</h2>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -878,38 +724,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav >
-            <ul>
-            
-              <li>
-                
-                  <img src="img/CS_img.png" width="5%" height="5%" class="float-left">
-                  <a href="#" class="float-left">
-                  About Us
-                </a>	
-                <a href="#" class="float-left">
-                  Contact Us
-                </a>
-                <a href="#" class="float-left">
-                  Services
-                </a>
-                <a href="#" class="float-left">
-                  Blog licenses
-                </a>
-                <a href="#" class="float-left">
-                  Certification
-                </a>
-                           <div class="float-right align-down">&copy;
-            Copy rights <script>
-              document.write(new Date().getFullYear())
-            </script>, All rights reserved | CloudSwan Solutions</div>
-              </li> 
-            </ul>
-          </nav>
-        </div>
-      </footer>
+      <jsp:include page="footer.jsp" />
     </div>
   </div>
   <div class="fixed-plugin">

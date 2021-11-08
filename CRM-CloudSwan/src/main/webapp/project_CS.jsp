@@ -34,7 +34,7 @@
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item ">
             <a class="nav-link" href="./dashboard_CS.jsp">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
@@ -47,13 +47,7 @@
             </a>
           </li>
            <li class="nav-item ">
-            <a class="nav-link" href="./student_CS.jsp">
-              <i class="material-icons">person</i>
-              <p>Student Details</p>
-            </a>
-          </li>
-           <li class="nav-item ">
-            <a class="nav-link" href="./trainees_CS.jsp">
+            <a class="nav-link" href="./Trainee_CS.jsp">
               <i class="material-icons">person</i>
               <p>Trainees</p>
             </a>
@@ -76,7 +70,7 @@
               <p>Enquiry information</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="./project_CS.jsp">
               <i class="material-icons">bubble_chart</i>
               <p>Project Details</p>
@@ -112,88 +106,65 @@
       </div>
     </div>
     <div class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">Project Details</a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <form class="navbar-form">
-              <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                  <i class="material-icons">search</i>
-                  <div class="ripple-container"></div>
-                </button>
-              </div>
-            </form>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:;">
-                  <i class="material-icons">dashboard</i>
-                  <p class="d-lg-none d-md-block">
-                    Stats
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">notifications</i>
-                  <span class="notification">5</span>
-                  <p class="d-lg-none d-md-block">
-                    Some Actions
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                  <a class="dropdown-item" href="#">Another Notification</a>
-                  <a class="dropdown-item" href="#">Another One</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">person</i>
-                  <p class="d-lg-none d-md-block">
-                    Account
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Settings</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
+     <jsp:include page="header.jsp" />
       <div class="content">
         <div class="container-fluid">
+        
+          <div class="btn-group d-block mr-0 ml-auto mr-3 text-right">
+   <button type="submit" class="btn btn-success" data-toggle="tooltip" title="Click To Save New Product" style="font-size:20px;"><i class="fa fa-save"></i></button>
+  <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Delete" style="font-size:20px;"> <i class="fa fa-trash"></i></button>
+    <button type="button" class="btn btn-warning" data-toggle="tooltip" title="Edit" style="font-size:20px;"> <i class="fa fa-edit"></i></button>
+     <button type="button" class="btn btn-info" data-toggle="tooltip" title="Clear" style="font-size:20px;"> <i class="fa fa-eraser"></i></button>
+</div>
+
       <!-- Start of container -->
 <!-- Start of card group -->
 <div class="card-group">
 <!-- start of outer card -->
 <div class="card">
-<div class="card-header card-header-primary text-center">
+<!-- Search start -->
 <div class="row">
-<div class="col-md-2"><img src="img/CS_img.png" width="90%" height="90%"></div>
-<div class="col-md-8">
-<h1>Get started today</h1>
-<h3>CloudSwan will drive your business forward</h3>
- </div>
- </div>
- </div>
+<!-- Start of 1st row 1st column-->
+<div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-info">
+                  <h3 class="card-title"><b>Trainee Information</b></h3>
+                </div>
+                <div class="card-body">
+                  <form>
+                  
+                    <div class="row">
+					  
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Trainee name</label><br>
+                          <input type="search" class="form-control">
+                          </div>
+                        </div>
+                   
+						<div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Course Name</label><br>
+                          <input type="search" class="form-control">
+                          </div>
+                        </div>
+           
+                    </div>
+                
+                <div class="row">
+                    <div class="col-md-5"></div>
+                      <div class="col-md-6">
+						<a href="dashboard_CS.jsp"><button class="btn btn-info">Search</button></a>
+                      </div>
+                    </div>
+                    </form>  
+                    </div>  
+                    </div>
+                    </div>
+                    </div>
+  <!-- Search end -->
+
+<div class="card">
 <div class="card-body">
 <!-- Start of 1st row -->
 
@@ -201,122 +172,159 @@
 <!-- Start of 1st row 1st column-->
 <div class="col-md-6">
               <div class="card h-85">
-                <div class="card-header card-header-primary">
-                  <h3 class="card-title">Personal Information</h3>
+                <div class="card-header card-header-info">
+                  <h3 class="card-title">Project details</h3>
                 </div>
                 <div class="card-body">
                   <form>
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">First Name<span class="text-danger">*</span></label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Last Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                       <div class="col-md-6">
-<!--                         <div class="form-group"> -->
-<!--                                 <div class="dropdown show"> -->
-<!--   <span class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-<!--     Your Role -->
-<!--   </span> -->
-
-<!--   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> -->
-<!--     <a class="dropdown-item" href="#">Admin</a> -->
-<!--     <a class="dropdown-item" href="#">User</a> -->
-<!--     <a class="dropdown-item" href="#">Employee</a> -->
-<!--   </div> -->
-<!-- </div> -->
-<!--                         </div> -->
-
-<div class="form-group">
-<!--  <label class="bmd-label-floating">Role<span class="text-danger">*</span></label> -->
-      <select id="inputState" class="form-control bmd-label-floating">
-        <option>Choose your role</option>
-        <option>User</option>
-        <option>Employee</option>
-        <option>Admin</option>
-      </select>
-    </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Email Id<span class="text-danger">*</span></label>
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Password<span class="text-danger">*</span></label>
-                          <input type="password" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Confirm Password<span class="text-danger">*</span></label>
-                          <input type="Password" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Contact<span class="text-danger">*</span></label>
-                          <input type="text" class="form-control" maxlength="10">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Address</label>
+                          <label class="bmd-label-floating">Project name<span class="text-danger">*</span></label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       </div>
                       <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">City</label>
+                          <label class="bmd-label-floating">Total no of modules<span class="text-danger">*</span></label>
                           <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">State</label>
-                          <input type="text" class="form-control" maxlength="10">
                         </div>
                       </div>
                       </div>
                       <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Country</label>
+                          <label class="bmd-label-floating">Module name<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                          <input type="text" class="form-control">
+                          <input type="text" class="form-control">
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Pin Code<span class="text-danger">*</span></label>
+                          <label class="bmd-label-floating">Sub modules<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                          <input type="text" class="form-control">
+                          <input type="text" class="form-control">
+                          <input type="text" class="form-control">
                           <input type="text" class="form-control">
                         </div>
-                        </div>
-                         </div>
-                         <div class="row">
-                      <div class="col-md-6">
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Preferred Certification<span class="text-danger">*</span></label>
-                          <input type="text" class="form-control" maxlength="10">
+        <select id="inputState" class="form-control bmd-label-floating">
+        <option>Sub modules 1 name</option>
+        <option>Trainee module </option>
+        <option>Admin module </option>
+        <option>Course Module</option>
+        <option>Employee Module</option>
+        <option>Software module</option>
+        </select>
                         </div>
                       </div>
                       </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Description<span class="text-danger">*</span></label>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="70" placeholder="Enter your description here....."></textarea>
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Sub modules<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+        <select id="inputState" class="form-control bmd-label-floating">
+        <option>Sub modules 2 name</option>
+        <option>Trainee module </option>
+        <option>Admin module </option>
+        <option>Course Module</option>
+        <option>Employee Module</option>
+        <option>Software module</option>
+        </select>
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Description<span class="text-danger">*</span></label>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="70" placeholder="Enter your description here....."></textarea>
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Sub modules<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+        <select id="inputState" class="form-control bmd-label-floating">
+        <option>Sub modules 3 name</option>
+        <option>Trainee module </option>
+        <option>Admin module </option>
+        <option>Course Module</option>
+        <option>Employee Module</option>
+        <option>Software module</option>
+        </select>
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Description<span class="text-danger">*</span></label>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="70" placeholder="Enter your description here....."></textarea>
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Additional Features</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <h5>Comments</h5>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="70" placeholder="Enter your comments here....."></textarea>
+                          <h5>Description</h5>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="70" placeholder="Enter your Description here......"></textarea>
+                          
+                        </div>
+                      </div>
+                      </div>
+          
                   </form>
                   </div>
                   </div>
@@ -325,15 +333,57 @@
 <!-- Start of 1st row 2nd column-->
 <div class="col-md-6">
               <div class="card h-85">
-                <div class="card-header card-header-primary">
-                  <h3 class="card-title">Educational Information</h3>
+                <div class="card-header card-header-info">
+                  <h3 class="card-title">Client Details</h3>
                 </div>
                 <div class="card-body">
                   <form>
-                    <div class="row">
+                  
+                  
+                  <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">College Name<span class="text-danger">*</span></label>
+                          <label class="bmd-label-floating">Client name<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                  
+                  
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Company name<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Business name<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      
+                      
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Contact<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+              
+              <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Address<span class="text-danger">*</span></label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -341,7 +391,7 @@
                       <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Highest Qualification<span class="text-danger">*</span></label>
+                          <label class="bmd-label-floating">Street<span class="text-danger">*</span></label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -349,7 +399,7 @@
                       <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Department (Optional)</label>
+                          <label class="bmd-label-floating">Pin code</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -358,55 +408,29 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Marks/CGPA(%)</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Address1</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      </div>
-                      <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Address2</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">City</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
                           <label class="bmd-label-floating">State</label>
-                          <input type="text" class="form-control" maxlength="10">
+                          <input type="text" class="form-control">
                         </div>
                       </div>
-                      <div class="col-md-6">
+				</div>
+				
+				 <div class="row">
+                      <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Country</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                      <div class="col-md-6">
+				</div>
+           
+           <div class="row">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Pin Code<span class="text-danger">*</span></label>
-                          <input type="text" class="form-control">
-                        </div>
+                         <label class="bmd-label-floating">Description</label>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="70" placeholder="Enter your Description here......"></textarea>
+                	</div>
                       </div>
-                    </div>
+                      </div>
                   </form>
                 </div>
               </div>
@@ -419,29 +443,200 @@
 <!-- Start of 2nd row 1st column-->
 <div class="col-md-6">
               <div class="card h-90">
-                <div class="card-header card-header-primary">
-                  <h3 class="card-title">Experience Information</h3>
+                <div class="card-header card-header-info">
+                  <h3 class="card-title">Software Requirement</h3>
                 </div>
                 <div class="card-body">
                   <form>
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Company Name</label>
+                          <select id="inputState" class="form-control bmd-label-floating">
+        <option>Operating system</option>
+        <option>WIN</option>
+        <option>MAC</option>
+        <option>LINUX</option>
+        <option>All</option>
+      </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                                                   <select id="inputState" class="form-control bmd-label-floating">
+        <option>Language</option>
+        <option>Java</option>
+        <option>Python</option>
+        <option>React</option>
+        <option>Any</option>
+      </select>
+                	</div>
+                      </div>
+                      </div>
+                      <div class="row">
+                       
+                      <div class="col-md-6">
+                        <div class="form-group">
+                                                    <select id="inputState" class="form-control bmd-label-floating">
+        <option>Database</option>
+        <option>MYSQL</option>
+        <option>MONGODB</option>
+        <option>ORACLE</option>
+        <option>Any</option>
+      </select>
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                                                    <select id="inputState" class="form-control bmd-label-floating">
+        <option>Browser</option>
+        <option>Chrome</option>
+        <option>Firefox</option>
+        <option>IE</option>
+        <option>All</option>
+      </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                     
+                      <div class="col-md-6">
+                        <div class="form-group">
+                                                    <select id="inputState" class="form-control bmd-label-floating">
+        <option>Web server</option>
+        <option>Tomcat</option>
+        <option>Glassfish</option>
+        <option>JBoss</option>
+        <option>Any</option>
+      </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Software development kit:</label>
                           <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Scripting language:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Framework:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Database connection:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Website design:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Validations:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Event handlers:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">XML parsing:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Server technology:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>                  
+                  </form>
+                </div>
+              </div>
+</div>
+
+<div class="col-md-6">
+              <div class="card h-90">
+                <div class="card-header card-header-info">
+                  <h3 class="card-title">Project cost estimation & Duration</h3>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Estimation duration </label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select id="inputState" class="form-control bmd-label-floating">
+        <option>Delivery phase</option>
+        <option>Daily</option>
+        <option>Weekly</option>
+        <option>Monthly</option>
+        <option>Yearly</option>
+      </select>
                         </div>
                       </div>
                       </div>
                       <div class="row">
                        <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Total Experience (In years)</label>
+                          <label class="bmd-label-floating">Working time</label><br>
+                	</div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select id="inputState" class="form-control bmd-label-floating">
+        <option>Working resource (in no)</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Monthly cost estimation per resource</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Salary (Per Annum)</label>
+                          <label class="bmd-label-floating">Total monthly cost</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -449,108 +644,218 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Expertise in</label>
+                          <label class="bmd-label-floating">Website design cost</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Domain</label>
+                          <label class="bmd-label-floating">Logo design cost (if any)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>                
+                  </form>
+                </div>
+              </div>
+</div>
+<div class="col-md-6">
+              <div class="card vh-90">
+                <div class="card-header card-header-info">
+                  <h3 class="card-title">Featuring cost</h3>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Payment gateway </label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Report generated </label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      
+                      </div>
+                      <div class="row">
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Email notification</label><br>
+                	</div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Responsive </label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Experience in CloudSwan</label>
+                          <label class="bmd-label-floating">Total estimated cost</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                    </div>
-                  
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Per changes cost</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>               
                   </form>
                 </div>
               </div>
 </div>
 <!-- End of 2nd row 1st column-->
 <!-- Start of 2nd row 2nd column-->
-<div class="col-md-6">
-              <div class="card h-95">
-                <div class="card-header card-header-primary">
-                  <h3 class="card-title">Employee Information</h3>
-                </div>
+</div>
+</div>
+
+<!-- Start of 2nd row 2nd column-->
+</div>
+
+<!-- End of 2nd row -->
+<div class="card">
                 <div class="card-body">
                   <form>
-                  
-                  <div class="form-group">
-      <select id="inputState" class="form-control bmd-label-floating">
-        <option>Your Role in CloudSwan</option>
-        <option>Software developer</option>
-        <option>Software Tester</option>
-        <option>Management staff</option>
-        <option>Trainer</option>
-        <option>HR</option>
-      </select>
-    </div>
-           
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <div class="dropdown show">
-  <span class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Your Role in CloudSwan
-  </span>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#	">Software developer</a>
-    <a class="dropdown-item" href="#">Software Tester</a>
-    <a class="dropdown-item" href="#">Trainer</a>
-    <a class="dropdown-item" href="#">Management staff</a>
-    <a class="dropdown-item" href="#">HR</a>
-  </div>
-</div>
+                          <h5>Comments</h5>
+                          <textarea name="txtdesc" id="txtdesc" rows="2" cols="160" placeholder="Enter your comments here....."></textarea>
+                          <h5>Description</h5>
+                          <textarea name="txtdesc" id="txtdesc" rows="4" cols="160" placeholder="Enter your Description here......"></textarea>
                           
                         </div>
-                        </div>
                       </div>
-                      <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Salary(per annum)</label>
-                          <input type="text" class="form-control">
-                        </div>
                       </div>
+                      </form>
+                      </div>
+                      </div>
+                      
+                      
+     <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-info">
+                  <h4 class="card-title">List of Employee Details</h4>
                     </div>
-                  </form>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-warning">
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Job Position</th>
+                      <th>Since</th>
+                      <th>Salary</th>
+                      <th>Action</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>Software Developer</td>
+                        <td>2013</td>
+                        <td>$36,738</td>
+                        <td class="td-actions">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
+                              <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
+                                <i class="material-icons icon-info">person</i>
+                              </button>
+                              <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Edit" style="font-size:20px;">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" class="btn btn-warning" data-toggle="tooltip" title="close" style="font-size:20px;">
+                                <i class="material-icons">close</i>
+                              </button>
+                              </div>
+                            </td>
+						</tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Minerva Hooper</td>
+                        <td>Software Tester</td>
+                        <td>2014</td>
+                        <td>$23,789</td>
+                        <td class="td-actions">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
+                              <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
+                                <i class="material-icons icon-info">person</i>
+                              </button>
+                              <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Edit" style="font-size:20px;">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" class="btn btn-warning" data-toggle="tooltip" title="close" style="font-size:20px;">
+                                <i class="material-icons">close</i>
+                              </button>
+                              </div>
+                            </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Sage Rodriguez</td>
+                        <td>Software Engineer</td>
+                        <td>2011</td>
+                        <td>$56,142</td>
+                        <td class="td-actions">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
+                              <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
+                                <i class="material-icons icon-info">person</i>
+                              </button>
+                              <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Edit" style="font-size:20px;">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" class="btn btn-warning" data-toggle="tooltip" title="close" style="font-size:20px;">
+                                <i class="material-icons">close</i>
+                              </button>
+                              </div>
+                            </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Philip Chaney</td>
+                        <td>Software Developer</td>
+                        <td>2015</td>
+                        <td>$38,735</td>
+                        <td class="td-actions">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
+                              <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
+                                <i class="material-icons icon-info">person</i>
+                              </button>
+                              <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Edit" style="font-size:20px;">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" class="btn btn-warning" data-toggle="tooltip" title="close" style="font-size:20px;">
+                                <i class="material-icons">close</i>
+                              </button>
+                              </div>
+                            </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-</div>
-<!-- Start of 2nd row 2nd column-->
-</div>
-<!-- End of 2nd row -->
-</div>
-</div>
-<!-- End of outer card -->
-</div>
-<div class="card-footer">
-<div class="row">
-<div class="col-md-9">
-<input type="checkbox" required/>&nbsp;I agree with the <a href="#"><b>Privacy Policy</b></a> & <a href="#"><b>Terms of Service</b></a>
-<p>Already have an account?<a href="#"><b>&nbsp;Login</b></a></p></div>
-<div class="col-md-3">
-<a href="#"><button class="btn btn-warning">Clear</button></a>
-<a href="login_CS.jsp"><button class="btn btn-info">Register</button></a>
+            </div></div>
 
 </div>
 </div>
-</div>
+<!-- End of outer card -->                     
+
+
 <!-- End of card group -->
 </div>
 <!-- End of container -->
       </div>
       <footer class="footer">
         <div class="container-fluid">
+        
+     
           <nav >
             <ul>
             
@@ -625,7 +930,7 @@
           </a>
         </li>
         <li class="button-container">
-          <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block">Free Download</a>
+          <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-info btn-block">Free Download</a>
         </li>
         <!-- <li class="header-title">Want more components?</li>
             <li class="button-container">

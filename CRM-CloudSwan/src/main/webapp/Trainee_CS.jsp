@@ -22,7 +22,7 @@
 
 <body class="">
   <div class="wrapper ">
-  <div class="sidebar" data-color="purple" data-background-color="white" data-image="img/sidebar-1.jpg">
+   <div class="sidebar" data-color="purple" data-background-color="white" data-image="img/sidebar-1.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -40,13 +40,13 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="./Employeeinfo_CS.jsp">
               <i class="material-icons">person</i>
               <p>Employee Info</p>
             </a>
           </li>
-           <li class="nav-item ">
+           <li class="nav-item active">
             <a class="nav-link" href="./Trainee_CS.jsp">
               <i class="material-icons">person</i>
               <p>Trainees</p>
@@ -105,17 +105,18 @@
         </ul>
       </div>
     </div>
-       <div class="main-panel">
-      <jsp:include page="header.jsp" />
+    <div class="main-panel">
+     <jsp:include page="header.jsp" />
       <div class="content">
         <div class="container-fluid">
         
-        <div class="btn-group d-block mr-0 ml-auto mr-3 text-right">
+          <div class="btn-group d-block mr-0 ml-auto mr-3 text-right">
    <button type="submit" class="btn btn-success" data-toggle="tooltip" title="Click To Save New Product" style="font-size:20px;"><i class="fa fa-save"></i></button>
   <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Delete" style="font-size:20px;"> <i class="fa fa-trash"></i></button>
     <button type="button" class="btn btn-warning" data-toggle="tooltip" title="Edit" style="font-size:20px;"> <i class="fa fa-edit"></i></button>
      <button type="button" class="btn btn-info" data-toggle="tooltip" title="Clear" style="font-size:20px;"> <i class="fa fa-eraser"></i></button>
 </div>
+
       <!-- Start of container -->
 <!-- Start of card group -->
 <div class="card-group">
@@ -127,7 +128,7 @@
 <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-info">
-                  <h3 class="card-title"><b>Employee Information</b></h3>
+                  <h3 class="card-title"><b>Trainee Information</b></h3>
                 </div>
                 <div class="card-body">
                   <form>
@@ -136,33 +137,27 @@
 					  
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Employee ID</label>
+                          <label class="bmd-label-floating">Trainee ID</label><br>
+                          <input type="search" class="form-control">
+                          </div>
+                        </div>
+                   
+						<div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Trainee name</label><br>
                           <input type="search" class="form-control">
                           </div>
                         </div>
                     
-                    
-                  
+
                       <div class="col-md-4">
                         <div class="form-group">
-                          <select id="inputState" class="form-control bmd-label-floating">
-        <option>Designation</option>
-        <option>Admin</option>
-        <option>Developer</option>
-        <option>Tester</option>
-        <option>Trainer</option>
-        </select>
-                          </div>
-                        </div>
-                 
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Employee name</label>
+                          <label class="bmd-label-floating">Course name</label><br>
                           <input type="email" class="form-control">
                           </div>
                         </div>
                     </div>
-                    
+                
                 <div class="row">
                     <div class="col-md-5"></div>
                       <div class="col-md-6">
@@ -185,7 +180,7 @@
 <div class="col-md-6">
               <div class="card h-85">
                 <div class="card-header card-header-info">
-                  <h3 class="card-title">Personal Information</h3>
+                  <h3 class="card-title">Student Information</h3>
                 </div>
                 <div class="card-body">
                   <form>
@@ -236,75 +231,7 @@
                         </div>
                       </div>
                     </div>
-                    
-                      
-                        
-                  </form>
-                  </div>
-                  </div>
-                  </div>
-
-<!-- Start of 1st row 2nd column-->
-<div class="col-md-6">
-              <div class="card h-85">
-                <div class="card-header card-header-info">
-                  <h3 class="card-title">Employment Information</h3>
-                </div>
-                <div class="card-body">
-                  <form>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Joining date<span class="text-danger">*</span></label><br>
-                          <input type="date" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">End date<span class="text-danger">*</span></label><br>
-                          <input type="date" class="form-control">
-                        </div>
-                      </div>
-                      </div>
-                      <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Employee status</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      </div>
-                    
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <h5>Comments</h5>
-                          <textarea name="txtdesc" id="txtdesc" rows="2" cols="70" placeholder="Enter your comments here....."></textarea>
-                          <h5>Description</h5>
-                          <textarea name="txtdesc" id="txtdesc" rows="2" cols="70" placeholder="Enter your Description here......"></textarea>
-                          
-                        </div>
-                      </div>
-                      </div>
-                  
-                  </form>
-                </div>
-              </div>
-</div>
-<!-- End of 1st row 2nd column-->
-</div>
-<!-- End of 1st row -->
-<!-- Start of 2nd row -->
-<div class="row">
-<div class="col-md-6">
-              <div class="card h-85">
-                <div class="card-header card-header-info">
-                  <h3 class="card-title">Contact Information</h3>
-                </div>
-                <div class="card-body">
-                  <form>
-
-<div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Contact<span class="text-danger">*</span></label>
@@ -346,30 +273,31 @@
                         </div>
                         </div>
                          </div>
-                                        </form>
-                </div>
-              </div>
-</div>
-<div class="col-md-6">
-              <div class="card h-85">
-                <div class="card-header card-header-info">
-                  <h3 class="card-title">Payroll Information</h3>
-                </div>
-                <div class="card-body">
-                  <form>
-
-<div class="row">
-                      <div class="col-md-12">
+                         <div class="row">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Salary<span class="text-danger">*</span></label>
+                          <label class="bmd-label-floating">Preferred Certification<span class="text-danger">*</span></label>
                           <input type="text" class="form-control" maxlength="10">
                         </div>
                       </div>
                       </div>
-                     <div class="row">
+                  </form>
+                  </div>
+                  </div>
+                  </div>
+
+<!-- Start of 1st row 2nd column-->
+<div class="col-md-6">
+              <div class="card h-85">
+                <div class="card-header card-header-info">
+                  <h3 class="card-title">Educational Information</h3>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Tax deduction</label>
+                          <label class="bmd-label-floating">College Name<span class="text-danger">*</span></label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -377,31 +305,93 @@
                       <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">PF deduction</label>
+                          <label class="bmd-label-floating">Highest Qualification<span class="text-danger">*</span></label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       </div>
-                                        </form>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Department (Optional)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                    
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Marks/CGPA(%)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Address1</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Address2</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">City</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">State</label>
+                          <input type="text" class="form-control" maxlength="10">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Country</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Pin Code<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
 </div>
+<!-- End of 1st row 2nd column-->
 </div>
-<!-- End of 2nd row -->
-<!-- Start of 3rd row -->
+<!-- End of 1st row -->
+<!-- Start of 2nd row -->
 <div class="row">
-<!-- Start of 3rd row 1st column-->
-<div class="col-md-6">
+<!-- Start of 2nd row 1st column-->
+<div class="col-md-12">
               <div class="card h-90">
                 <div class="card-header card-header-info">
-                  <h3 class="card-title">Account Information</h3>
+                  <h3 class="card-title">Course Details</h3>
                 </div>
                 <div class="card-body">
                   <form>
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account holder name</label>
+                          <label class="bmd-label-floating">Courses opted for</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -409,13 +399,18 @@
                       <div class="row">
                        <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Bank name</label>
-                          <input type="text" class="form-control">
+                          <label class="bmd-label-floating">Total Experience (In years)</label><br>
+                          <select id="inputState" class="form-control bmd-label-floating">
+        <option></option>
+        <option>Fresher</option>
+        <option>Experience</option>
+      </select>
+                          
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Branch</label>
+                          <label class="bmd-label-floating">Salary (Per Annum)</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -423,70 +418,39 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">IFSC code</label>
+                          <label class="bmd-label-floating">Expertise in</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account No</label>
+                          <label class="bmd-label-floating">Domain</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                    </div>                  
-                  </form>
-                </div>
-              </div>
-</div>
-<!-- End of 3rd row 1st column-->
-<!-- Start of 3rd row 2nd column-->
-<div class="col-md-6">
-              <div class="card h-95">
-                <div class="card-header card-header-info">
-                  <h3 class="card-title">Benefit Information</h3>
-                </div>
-                <div class="card-body">
-                  <form>
-
-                      <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Hourly rate</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Project commission</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div> 
+                    </div>
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Client interaction</label>
+                          <label class="bmd-label-floating">Experience in CloudSwan</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Default service commission</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div> 
+                    </div>
+                  
                   </form>
                 </div>
               </div>
 </div>
+<!-- End of 2nd row 1st column-->
+<!-- Start of 2nd row 2nd column-->
 </div>
 </div>
 
-<!-- Start of 3rd row 2nd column-->
+<!-- Start of 2nd row 2nd column-->
 </div>
 
-<!-- End of 3rd row -->
+<!-- End of 2nd row -->
 <div class="card">
                 <div class="card-body">
                   <form>
@@ -530,7 +494,7 @@
                         <td>2013</td>
                         <td>$36,738</td>
                         <td class="td-actions">
-                              <div class="btn-group d-block mr-0 ml-auto mr-3">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
                               <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
                                 <i class="material-icons icon-info">person</i>
                               </button>
@@ -550,7 +514,7 @@
                         <td>2014</td>
                         <td>$23,789</td>
                         <td class="td-actions">
-                              <div class="btn-group d-block mr-0 ml-auto mr-3">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
                               <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
                                 <i class="material-icons icon-info">person</i>
                               </button>
@@ -570,7 +534,7 @@
                         <td>2011</td>
                         <td>$56,142</td>
                         <td class="td-actions">
-						<div class="btn-group d-block mr-0 ml-auto mr-3">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
                               <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
                                 <i class="material-icons icon-info">person</i>
                               </button>
@@ -590,7 +554,7 @@
                         <td>2015</td>
                         <td>$38,735</td>
                         <td class="td-actions">
-                              <div class="btn-group d-block mr-0 ml-auto mr-3">
+                               <div class="btn-group d-block mr-0 ml-auto mr-3">
                               <button type="button" class="btn btn-success" data-toggle="tooltip" title="add" style="font-size:20px;">
                                 <i class="material-icons icon-info">person</i>
                               </button>
@@ -618,7 +582,40 @@
 </div>
 <!-- End of container -->
       </div>
-      <jsp:include page="footer.jsp" />
+      <footer class="footer">
+        <div class="container-fluid">
+        
+     
+          <nav >
+            <ul>
+            
+              <li>
+                
+                  <img src="img/CS_img.png" width="5%" height="5%" class="float-left">
+                  <a href="#" class="float-left">
+                  About Us
+                </a>	
+                <a href="#" class="float-left">
+                  Contact Us
+                </a>
+                <a href="#" class="float-left">
+                  Services
+                </a>
+                <a href="#" class="float-left">
+                  Blog licenses
+                </a>
+                <a href="#" class="float-left">
+                  Certification
+                </a>
+                           <div class="float-right align-down">&copy;
+            Copy rights <script>
+              document.write(new Date().getFullYear())
+            </script>, All rights reserved | CloudSwan Solutions</div>
+              </li> 
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </div>
   </div>
   <div class="fixed-plugin">
