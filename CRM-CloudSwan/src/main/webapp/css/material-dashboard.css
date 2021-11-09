@@ -4265,7 +4265,7 @@ tbody.collapse.show {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 10px 77px 8px 20px  !important;
 }
 
 .nav-link:hover,
@@ -11415,7 +11415,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn:not(.btn-just-icon):not(.btn-fab) .fa {
   position: relative;
   display: inline-block;
-  top: 0;
+  top: 22px;
   margin-top: -1em;
   margin-bottom: -1em;
   font-size: 1.1rem;
@@ -15315,23 +15315,28 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .sidebar .nav p {
-  margin: 0;
-  line-height: 30px;
-  font-size: 14px;
-  position: relative;
-  display: block;
-  height: auto;
-  white-space: nowrap;
+     margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    height: auto;
+    white-space: nowrap;
+    padding-left: 30px;
+    color: white;
+    text-transform: capitalize;
+    text-align: left;
+
 }
 
 .sidebar .nav i {
   font-size: 24px;
   float: left;
-  margin-right: 15px;
+  margin-right: 0px;
   line-height: 30px;
   width: 30px;
   text-align: center;
-  color: #a9afbb;
+  color: #ffffff;
 }
 
 .sidebar .nav li a,

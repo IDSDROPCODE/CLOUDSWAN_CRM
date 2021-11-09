@@ -1,3 +1,28 @@
+function forAdminMenuItems(MenuItem){
+	console.log(MenuItem);//name CRM_DASHBOARD
+	
+	
+	//Tables to be arranged in proper order
+		setTimeout(function(){
+			
+			$($.fn.dataTable.tables(true)).DataTable().columns.adjust().draw(false); //DataTable 
+			
+		},500)
+		
+		
+		
+		
+		
+	var adminsideformId = document.getElementById("adminsidebarForm");  
+	adminsideformId.action = "AdminCRMSideBar?adminScreen="+MenuItem+"";// AdminCRMSideBar?adminScreen=CRM_DASHBOARD
+	adminsideformId.submit();
+	
+	
+	
+	
+}
+
+
 function loginvalidation(){
 	
 	var logForm=document.getElementById("logForm");//form id
